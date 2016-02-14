@@ -1,0 +1,388 @@
+@charset "UTF-8";
+.border-black {
+  border: 1px solid black;
+}
+.border-blue {
+  border: 1px solid blue;
+}
+.border-red {
+  border: 1px solid red;
+}
+.border-yellow {
+  border: 1px solid #FFAD0B;
+}
+.border-gray {
+  border: 1px solid lightgray;
+}
+.border-green {
+  border: 1px solid green;
+}
+.border-pink {
+  border: 1px solid pink;
+}
+.border-white {
+  border: 1px solid white;
+}
+.border-brown {
+  border: 1px solid saddlebrown;
+}
+/*
+ aux
+*/
+.valign {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+.nodisplay {
+  display: none;
+}
+.bg-color1 {
+  background-color: #fbfbfb;
+}
+.bg-color2 {
+  background-color: #fff;
+}
+#header {
+  position: relative;
+  height: 90px;
+  background: #2d3649;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+#header:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+#title {
+  display: inline-block;
+  height: 30px;
+  font-size: 0;
+}
+#title:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+#title > p {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 17px;
+  font-weight: bold;
+}
+#header-left {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  font-size: 0;
+}
+#header-left > a > span {
+  font-size: 11px;
+}
+#header-setting > span {
+  color: #6f86ff;
+}
+#header-right {
+  font-size: 0;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+#header-right > div {
+  display: inline-block;
+  margin: 0 2px;
+}
+#header-right > div > span {
+  font-size: 11px;
+  color: gray;
+}
+#header-close {
+  font-size: 11px;
+}
+#header-bottom {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: darkgray;
+}
+#header-bottom > div {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  font-size: 0;
+}
+#header-bottom > div:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+#header-bottom > div > span {
+  font-size: 19px;
+  vertical-align: middle;
+}
+.header-showroom {
+  color: white;
+}
+#content {
+  height: 460px;
+  background-color: white;
+}
+.roomlist-header {
+  height: 35px;
+}
+.roomlist-search {
+  height: 100%;
+  background: #eff2f5;
+  padding: 0 5px;
+  border: 1px solid white;
+}
+.roomlist-search > div {
+  display: inline-block;
+}
+.roomlist-search:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+.roomlist-search-left {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 5px;
+  background: white;
+  overflow-y: hidden;
+  border: 1px solid #DBDBDB;
+}
+.roomlist-search-left > div {
+  display: inline-block;
+}
+.roomlist-search-left > input {
+  display: inline-block;
+  font-size: 13px;
+  width: 230px;
+  height: 25px;
+  border: none;
+}
+.roomlist-search-left > input:focus,
+.roomlist-search-left > input:active {
+  outline: none;
+}
+.roomlist-search-icon > span {
+  font-size: 11px;
+}
+.roomlist-search-right {
+  text-align: center;
+  float: right;
+  height: 100%;
+}
+.roomlist-search-right > div {
+  width: 30px;
+  height: 100%;
+  margin: 0 auto;
+}
+.roomlist-search-right > div:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.roomlist-search-right > div > span {
+  display: inline-block;
+  vertical-align: middle;
+  color: gray;
+}
+.roomlist-entry {
+  font-size: 0;
+  height: 55px;
+  text-align: justify;
+}
+.roomlist-entry > div {
+  vertical-align: middle;
+}
+.roomlist-entry:hover {
+  background-color: #f2f2f2;
+}
+.roomlist-entry-photo {
+  display: inline-block;
+  width: 55px;
+  height: 100%;
+  text-align: center;
+}
+.roomlist-entry-photo:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+.roomlist-entry-photo > p {
+  font-size: 15px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 40px;
+  border: 1px solid #c9c9c9;
+  background-image: url("https://sdl-stickershop.line.naver.jp/products/0/0/2/2351/iphone/main_animation@2x.png?__=20150924");
+  background-size: 40px 40px;
+}
+.roomlist-entry-info {
+  float: right;
+  width: calc(100% - 60px);
+  height: 100%;
+  padding-left: 5px;
+  position: relative;
+  border-bottom: 1px solid #d2d2d2;
+}
+.roomlist-entry-info:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+.roomlist-entry-info > div {
+  font-size: 14px;
+  vertical-align: middle;
+}
+.roomlist-entry-info > div > p {
+  font-size: 14px;
+}
+.roomlist-entry-title {
+  display: inline-block;
+}
+.roomlist-entry-title > p {
+  display: inline-block;
+  font-weight: bold;
+  color: #4f4f4f;
+}
+.roomlist-entry-time {
+  position: absolute;
+  height: 20px;
+  margin: auto 0;
+  top: 0;
+  right: 5px;
+  bottom: 0;
+  font-size: 11px;
+  color: #b2b2b2;
+}
+#room-inside {
+  display: none;
+}
+#room-inside-header {
+  background: #2d3649;
+  height: 30px;
+  border-top: 1px solid #4B4B4C;
+}
+#room-inside-header:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+#room-inside-header > p {
+  display: inline-block;
+  vertical-align: middle;
+  color: #f3f3f3;
+  margin-left: 15px;
+  font-size: 13px;
+}
+#room-inside-header > p > span {
+  vertical-align: middle;
+  font-size: 13px;
+  font-weight: bold;
+  font-style: italic;
+}
+#room-inside-body {
+  height: 400px;
+  padding: 5px;
+  background: #ACCDDA;
+  overflow-y: scroll;
+}
+#room-inside-bottom {
+  height: 35px;
+}
+#room-inside-bottom:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+#room-inside-bottom > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+.room-inside-talk {
+  height: 40px;
+}
+.room-inside-talk-photo {
+  height: 40px;
+  width: 40px;
+  float: left;
+}
+.room-inside-talk-photo:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+.room-inside-talk-photo > p {
+  display: inline-block;
+  vertical-align: top;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  border: 1px solid #d3d3d3;
+  background-image: url("https://sdl-stickershop.line.naver.jp/products/0/0/3/1252/LINEStorePC/main.png?__=20150924");
+  background-size: 30px 30px;
+}
+.room-inside-talk-text {
+  width: 230px;
+  margin-right: 5px;
+  height: 40px;
+  float: right;
+}
+.room-inside-talk-text > p {
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  height: 35px;
+  padding: 5px;
+  font-size: 12px;
+}
+#room-inside-bottom-left > div {
+  display: inline-block;
+  padding: 0 3px;
+  color: gray;
+}
+#room-inside-bottom-right {
+  float: right;
+  height: 35px;
+  width: 35px;
+  background: #5f76ff;
+  text-align: center;
+}
+#room-inside-bottom-right > div {
+  height: 100%;
+  width: 100%;
+}
+#room-inside-bottom-right > div:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+#room-inside-bottom-right > div > span {
+  vertical-align: middle;
+  color: white;
+}
+#chat-user-input {
+  border: none;
+  width: 200px;
+}
+#chat-user-input:active,
+#chat-user-input:focus {
+  outline: none;
+}

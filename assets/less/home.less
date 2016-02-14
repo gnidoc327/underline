@@ -1,0 +1,409 @@
+@charset "UTF-8";
+
+@import "debug.less";
+
+
+#header {
+    position: relative;
+    height: 90px;
+    background: #2d3649;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+
+    &:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+#title {
+    display: inline-block;
+    height: 30px;
+    font-size: 0;
+
+    &:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+    }
+
+    > p {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 17px;
+        font-weight: bold;
+    }
+}
+
+#header-left {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    font-size: 0;
+
+    > a > span {
+        font-size: 11px;
+    }
+}
+
+#header-setting {
+    > span {
+        color: #6f86ff;
+    }
+}
+
+#header-right {
+    //display: inline-block;
+    font-size: 0;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+
+    > div {
+        display: inline-block;
+        margin: 0 2px;
+    }
+
+    > div > span {
+        font-size: 11px;
+        color: gray;
+    }
+}
+
+#header-close {
+    font-size: 11px;
+
+}
+
+#header-bottom {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: darkgray;
+
+    > div {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin: 0 10px;
+
+        font-size: 0;
+
+        &:before {
+            .valign;
+        }
+
+        > span {
+            font-size: 19px;
+            vertical-align: middle;
+        }
+    }
+}
+
+.header-showroom {
+    color: white;
+}
+
+#content {
+    height: 460px;
+    background-color: white;
+}
+
+#roomlist {
+    //.nodisplay;
+}
+
+.roomlist-header {
+    height: 35px;
+}
+
+.roomlist-search {
+    height: 100%;
+    background: #eff2f5;
+    padding: 0 5px;
+    .border-white;
+
+    > div {
+        display: inline-block;
+    }
+
+    &:before {
+        .valign;
+    }
+}
+
+.roomlist-search-left {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 5px;
+    background: white;
+    overflow-y: hidden;
+    border: 1px solid #DBDBDB;
+
+
+    > div {
+        display: inline-block;
+    }
+
+    > input {
+        display: inline-block;
+        font-size: 13px;
+        width: 230px;
+        height: 25px;
+        border: none;
+
+        &:focus, &:active {
+            outline: none;
+        }
+    }
+}
+
+.roomlist-search-icon {
+    > span {
+        font-size: 11px;
+    }
+}
+.roomlist-search-right {
+    text-align: center;
+    float: right;
+    height: 100%;
+
+    > div {
+        width: 30px;
+        height: 100%;
+        margin: 0 auto;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+    }
+
+    > div > span {
+        display: inline-block;
+        vertical-align:  middle;
+        color: gray;
+    }
+}
+
+.roomlist-body {
+
+}
+
+.roomlist-entry {
+    font-size: 0;
+    height: 55px;
+    text-align: justify;
+
+    > div {
+        vertical-align: middle;
+    }
+
+    &:hover {
+        background-color: gray;
+    }
+}
+
+.roomlist-entry-photo {
+    display: inline-block;
+    width: 55px;
+    height: 100%;
+    text-align: center;
+
+    &:before {
+        .valign;
+    }
+
+    > p {
+        font-size: 15px;
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 40px;
+        border: 1px solid #c9c9c9;
+        background-image: url("https://sdl-stickershop.line.naver.jp/products/0/0/2/2351/iphone/main_animation@2x.png?__=20150924");
+        background-size: 40px 40px;
+
+    }
+}
+
+.roomlist-entry-info {
+    float: right;
+    width: ~"calc(100% - 60px)";
+    height: 100%;
+    padding-left: 5px;
+    position: relative;
+    border-bottom: 1px solid #d2d2d2;
+
+    &:before {
+        .valign;
+    }
+
+    > div {
+        font-size: 14px;
+        vertical-align: middle;
+    }
+
+    > div > p {
+        font-size: 14px;
+    }
+}
+
+.roomlist-entry-title {
+    display: inline-block;
+
+    > p {
+        display: inline-block;
+        font-weight: bold;
+        color: #4f4f4f;
+    }
+}
+
+.roomlist-entry-time {
+    position: absolute;
+    height: 20px;
+    margin: auto 0;
+    top: 0;
+    right: 5px;
+    bottom: 0;
+
+    font-size: 11px;
+    color: #b2b2b2;
+}
+
+#room-inside {
+    .nodisplay;
+}
+
+#room-inside-header {
+    background: #2d3649;
+    height: 30px;
+    border-top: 1px solid #4B4B4C;
+
+    &:before {
+        .valign;
+    }
+
+    > p {
+        display: inline-block;
+        vertical-align: middle;
+        color: #f3f3f3;
+        margin-left: 15px;
+        font-size: 13px;
+    }
+
+    > p > span {
+        vertical-align: middle;
+        font-size: 13px;
+        font-weight: bold;
+        font-style: italic;
+    }
+}
+
+#room-inside-body {
+    height: 400px;
+    padding: 5px;
+    background: #ACCDDA;
+    overflow-y: scroll;
+}
+
+#room-inside-bottom {
+    height: 35px;
+
+    &:before {
+        .valign;
+    }
+
+    > div {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.room-inside-talk {
+    height: 40px;
+
+    &:before {
+    }
+
+    > div {
+    }
+}
+
+.room-inside-talk-photo {
+    height: 40px;
+    width: 40px;
+    float: left;
+
+    &:before {
+        .valign;
+    }
+    > p {
+        display: inline-block;
+        vertical-align: top;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        border: 1px solid #d3d3d3;
+        background-image: url("https://sdl-stickershop.line.naver.jp/products/0/0/3/1252/LINEStorePC/main.png?__=20150924");
+        background-size: 30px 30px;
+    }
+}
+
+.room-inside-talk-text {
+    width: 230px;
+    margin-right: 5px;
+    height: 40px;
+    float: right;
+
+    > p {
+        background-color: #f8f8f8;
+        border-radius: 5px;
+        height: 35px;
+        padding: 5px;
+        font-size: 12px;
+    }
+}
+
+#room-inside-bottom-left {
+    > div {
+        display: inline-block;
+        padding: 0 3px;
+        color: gray;
+    }
+}
+
+#room-inside-bottom-right {
+    float: right;
+    height: 35px;
+    width: 35px;
+    background: #5f76ff;
+    text-align: center;
+
+    > div {
+        height: 100%;
+        width: 100%;
+
+        &:before {
+            .valign;
+        }
+    }
+
+    > div > span {
+        vertical-align: middle;
+        color: white;
+    }
+}
+
+#chat-user-input {
+    border: none;
+    width: 200px;
+    &:active, &:focus {
+        outline: none;
+    }
+}

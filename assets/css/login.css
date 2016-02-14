@@ -1,0 +1,167 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  background-color: #F0F0F0;
+}
+.temp {
+  display: block;
+}
+.login-naverbtn {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+.login-naverbtn img {
+  width: 277px;
+  height: 50px;
+}
+.login-naverbtn img:hover {
+  transform: translate(3px, 3px);
+}
+#login-logo {
+  height: 170px;
+  text-align: center;
+  padding-top: 30px;
+}
+#login-user-input {
+  text-align: center;
+}
+.login-id,
+.login-pwd {
+  width: 278px;
+  height: 54px;
+  margin: 0 auto;
+  border: 1px solid #000000;
+  margin: 5px 0;
+  padding-left: 10px;
+}
+.login-id:focus,
+.login-pwd:focus {
+  outline: none;
+}
+.login-input {
+  text-align: center;
+}
+#login-box {
+  width: 350px;
+  height: 550px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border: 1px solid black;
+  background: white;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(white, #E0E4E8);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(white, #E0E4E8);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(white, #E0E4E8);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(white, #E0E4E8);
+  /* Standard syntax */
+  box-shadow: 0px 0px 7px 2px #707070;
+}
+.login-btn-login {
+  width: 277px;
+  height: 60px;
+  background-color: #23CA00;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  margin-top: 10px;
+}
+.login-idlost {
+  width: 277px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 15px;
+}
+.login-idlost img {
+  padding-right: 5px;
+}
+.login-idlost span {
+  width: 260px;
+}
+/* modal */
+.modalDialog {
+  font-size: 13px;
+  color: #3b3b3b;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+.modalDialog div {
+  width: 307px;
+  height: 380px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #fff;
+  text-align: center;
+}
+.modalDialog:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modalDialog p {
+  margin: 25px 0px 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.modalDialog .modal-field {
+  width: 263px;
+  height: 281px;
+  margin: 0 auto;
+}
+.modalDialog .modal-field img {
+  width: 128px;
+  height: 130px;
+}
+.modalDialog .modal-field .modal-save-btn {
+  width: 223px;
+  height: 60px;
+  background-color: #23CA00;
+  border: none;
+  border-radius: 7px;
+  text-align: center;
+  color: #ffffff;
+  padding: 20px;
+  margin: 0px;
+}
+.modalDialog .modal-field .input-nickname {
+  width: 223px;
+  height: 60px;
+  border: 2px solid #23CA00;
+  border-radius: 7px;
+  text-align: center;
+  padding: 20px;
+  margin: 10px 0;
+}
+.modalDialog .modal-field .input-nickname:focus {
+  outline: none;
+}
+.close {
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  width: 19px;
+  height: 19px;
+  opacity: 1 !important;
+}
